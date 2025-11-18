@@ -17,7 +17,7 @@ var mountain_atlas = Vector2i(7,0)
 
 
 var width : int = 600
-var height : int = 600
+var height : int = 400
 
 var noise_value_arr = []
 

@@ -18,12 +18,12 @@ func _process(delta):
 	if Input.is_action_pressed("camera_right"):
 		direction.x += 1
 	if Input.is_action_pressed("zoom_out"):
-		zomm += 0.01
+		zomm += 0.2 * delta
 		if zomm >= 1:
 			zomm = 1
 		
 	if Input.is_action_pressed("zoom_in"):
-		zomm -= 0.01
+		zomm -= 0.2 * delta
 		if zomm <= 0.01:
 			zomm = 0.01
 
