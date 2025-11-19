@@ -236,6 +236,17 @@ offset_right = 48.0
 offset_bottom = 63.0
 grow_horizontal = 2
 
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "WASD movimento Q e E zoom"
+
 [connection signal="value_changed" from="Panel/DeepOceanScroll" to="." method="_on_deep_ocean_scroll_value_changed"]
 [connection signal="value_changed" from="Panel/OceanScroll" to="." method="_on_ocean_scroll_value_changed"]
 [connection signal="value_changed" from="Panel/SandScroll" to="." method="_on_sand_scroll_value_changed"]
