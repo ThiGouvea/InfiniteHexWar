@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=3 uid="uid://65a7yd0dqp3h"]
 
-[ext_resource type="Texture2D" uid="uid://bym7sw1chiyqq" path="res://assets/path1.png" id="1_2sjy5"]
-[ext_resource type="Script" uid="uid://dxrhxhyypmkkg" path="res://scripts/tile.gd" id="1_vhibn"]
-[ext_resource type="Script" uid="uid://dgfay31767okk" path="res://scripts/camera_2d.gd" id="3_r3gf4"]
-[ext_resource type="PackedScene" uid="uid://2srh8txtq6j0" path="res://scenes/hud.tscn" id="4_rvdvl"]
+[ext_resource type="Script" uid="uid://dxrhxhyypmkkg" path="res://scripts/tile.gd" id="1_3wd64"]
+[ext_resource type="Texture2D" uid="uid://bym7sw1chiyqq" path="res://assets/path1.png" id="2_gtvo4"]
+[ext_resource type="Script" uid="uid://dgfay31767okk" path="res://scripts/camera_2d.gd" id="3_8s5dm"]
+[ext_resource type="PackedScene" uid="uid://2srh8txtq6j0" path="res://scenes/HudMapGenerator.tscn" id="4_wlg2h"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_vhibn"]
 seed = 155
@@ -19,7 +19,7 @@ domain_warp_amplitude = 10.0
 noise = SubResource("FastNoiseLite_vhibn")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vhibn"]
-texture = ExtResource("1_2sjy5")
+texture = ExtResource("2_gtvo4")
 margins = Vector2i(0, 1)
 texture_region_size = Vector2i(60, 52)
 0:0/0 = 0
@@ -38,7 +38,7 @@ tile_size = Vector2i(59, 51)
 sources/0 = SubResource("TileSetAtlasSource_vhibn")
 
 [node name="MapGenerator" type="Node2D"]
-script = ExtResource("1_vhibn")
+script = ExtResource("1_3wd64")
 noise_height_texture = SubResource("NoiseTexture2D_r3gf4")
 
 [node name="MapHexes" type="TileMapLayer" parent="."]
@@ -47,10 +47,10 @@ tile_set = SubResource("TileSet_r3gf4")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(1514, 1653)
 zoom = Vector2(0.4, 0.4)
-script = ExtResource("3_r3gf4")
+script = ExtResource("3_8s5dm")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="HUD" parent="CanvasLayer" instance=ExtResource("4_rvdvl")]
+[node name="HUD" parent="CanvasLayer" instance=ExtResource("4_wlg2h")]
 
 [connection signal="values_changed" from="CanvasLayer/HUD" to="." method="_on_hud_values_changed"]

@@ -206,8 +206,8 @@ offset_right = 96.0
 offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
-min_value = 0.01
-max_value = 0.1
+min_value = 0.005
+max_value = 0.05
 step = 0.001
 value = 0.01
 
