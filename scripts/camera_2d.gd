@@ -3,7 +3,7 @@ extends Camera2D
 @export var speed: float = 1000.0
 @onready var camera_2d: Camera2D = $"."
 
-var zomm = 0.1
+var zomm = 0.02
 
 func _process(delta):
 	var direction = Vector2.ZERO
