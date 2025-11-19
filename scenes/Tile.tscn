@@ -1,11 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://65a7yd0dqp3h"]
+[gd_scene load_steps=9 format=3 uid="uid://65a7yd0dqp3h"]
 
 [ext_resource type="Texture2D" uid="uid://bym7sw1chiyqq" path="res://assets/path1.png" id="1_2sjy5"]
 [ext_resource type="Script" uid="uid://dxrhxhyypmkkg" path="res://scripts/tile.gd" id="1_vhibn"]
 [ext_resource type="Script" uid="uid://dgfay31767okk" path="res://scripts/camera_2d.gd" id="3_r3gf4"]
+[ext_resource type="PackedScene" uid="uid://2srh8txtq6j0" path="res://scenes/hud.tscn" id="4_rvdvl"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_vhibn"]
-frequency = 0.0023
+frequency = 0.0012
 offset = Vector3(156.86, 0, 0)
 fractal_type = 2
 fractal_octaves = 4
@@ -47,3 +48,7 @@ tile_set = SubResource("TileSet_r3gf4")
 position = Vector2(1514, 1653)
 zoom = Vector2(0.4, 0.4)
 script = ExtResource("3_r3gf4")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HUD" parent="CanvasLayer" instance=ExtResource("4_rvdvl")]
