@@ -33,5 +33,5 @@ func _on_seed_2_value_changed(value: float) -> void:
 	values_changed.emit("seed", value)
 
 func _on_frequency_scroll_value_changed(value: float) -> void:
-	var true_value = value / 10
+	var true_value = value / 1000
 	values_changed.emit("frequency", true_value)

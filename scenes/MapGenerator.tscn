@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://2srh8txtq6j0" path="res://scenes/HudMapGenerator.tscn" id="4_wlg2h"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_vhibn"]
+noise_type = 0
 seed = 155
 frequency = 0.0012
 fractal_type = 2

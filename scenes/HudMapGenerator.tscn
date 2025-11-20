@@ -97,6 +97,18 @@ offset_bottom = 31.0
 grow_horizontal = 2
 text = "Seed"
 
+[node name="Seed3" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -42.0
+offset_top = 72.0
+offset_right = 52.0
+offset_bottom = 95.0
+grow_horizontal = 2
+text = "Zoom"
+
 [node name="DeepOceanScroll" type="HScrollBar" parent="Panel"]
 layout_mode = 1
 offset_top = 40.0
@@ -104,7 +116,7 @@ offset_right = 192.0
 offset_bottom = 56.0
 min_value = -1.0
 max_value = 1.0
-step = 0.1
+step = 0.05
 
 [node name="OceanScroll" type="HScrollBar" parent="Panel"]
 layout_mode = 1
@@ -113,7 +125,7 @@ offset_right = 192.0
 offset_bottom = 96.0
 min_value = -1.0
 max_value = 1.0
-step = 0.1
+step = 0.05
 
 [node name="SandScroll" type="HScrollBar" parent="Panel"]
 layout_mode = 1
@@ -122,7 +134,7 @@ offset_right = 192.0
 offset_bottom = 136.0
 min_value = -1.0
 max_value = 1.0
-step = 0.1
+step = 0.05
 
 [node name="GrassLandScroll" type="HScrollBar" parent="Panel"]
 layout_mode = 1
@@ -135,7 +147,7 @@ offset_bottom = 76.0
 grow_vertical = 2
 min_value = -1.0
 max_value = 1.0
-step = 0.1
+step = 0.05
 
 [node name="ForestScroll" type="HScrollBar" parent="Panel"]
 layout_mode = 1
@@ -149,7 +161,7 @@ offset_bottom = -44.0
 grow_vertical = 2
 min_value = -1.0
 max_value = 1.0
-step = 0.1
+step = 0.05
 
 [node name="LowLandScroll" type="HScrollBar" parent="Panel"]
 layout_mode = 1
@@ -163,7 +175,7 @@ offset_bottom = -4.0
 grow_vertical = 2
 min_value = -1.0
 max_value = 1.0
-step = 0.1
+step = 0.05
 
 [node name="HighLandScroll" type="HScrollBar" parent="Panel"]
 layout_mode = 1
@@ -177,7 +189,7 @@ offset_bottom = 36.0
 grow_vertical = 2
 min_value = -1.0
 max_value = 1.0
-step = 0.1
+step = 0.05
 
 [node name="MountainScroll" type="HScrollBar" parent="Panel"]
 layout_mode = 1
@@ -191,7 +203,7 @@ offset_bottom = 76.0
 grow_vertical = 2
 min_value = -1.0
 max_value = 1.0
-step = 0.1
+step = 0.05
 
 [node name="FrequencyScroll" type="HScrollBar" parent="Panel"]
 layout_mode = 1
@@ -206,10 +218,10 @@ offset_right = 96.0
 offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
-min_value = 0.005
-max_value = 0.05
-step = 0.001
-value = 0.01
+min_value = 0.2
+max_value = 1.0
+step = 0.1
+value = 0.2
 
 [node name="Button" type="Button" parent="Panel"]
 layout_mode = 1
@@ -235,6 +247,30 @@ offset_top = 32.0
 offset_right = 48.0
 offset_bottom = 63.0
 grow_horizontal = 2
+
+[node name="Sizey" type="SpinBox" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 14.0
+offset_top = 128.0
+offset_right = 110.0
+offset_bottom = 159.0
+grow_horizontal = 2
+max_value = 1000.0
+
+[node name="Sizex" type="SpinBox" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -90.0
+offset_top = 128.0
+offset_right = 6.0
+offset_bottom = 159.0
+grow_horizontal = 2
+max_value = 1000.0
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
