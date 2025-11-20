@@ -237,6 +237,16 @@ grow_horizontal = 2
 grow_vertical = 0
 text = "Generate"
 
+[node name="Exit" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -52.0
+offset_bottom = 32.0
+grow_horizontal = 0
+text = "Exit"
+
 [node name="Seed2" type="SpinBox" parent="Panel"]
 layout_mode = 1
 anchors_preset = 5
@@ -295,6 +305,7 @@ text = "WASD movimento Q e E zoom"
 [connection signal="value_changed" from="Panel/MountainScroll" to="." method="_on_mountain_scroll_value_changed"]
 [connection signal="value_changed" from="Panel/FrequencyScroll" to="." method="_on_frequency_scroll_value_changed"]
 [connection signal="pressed" from="Panel/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Panel/Exit" to="." method="_on_exit_pressed"]
 [connection signal="value_changed" from="Panel/Seed2" to="." method="_on_seed_2_value_changed"]
 [connection signal="value_changed" from="Panel/Sizey" to="." method="_on_sizey_value_changed"]
 [connection signal="value_changed" from="Panel/Sizex" to="." method="_on_sizex_value_changed"]

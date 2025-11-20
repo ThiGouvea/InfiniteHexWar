@@ -10,3 +10,57 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_l6cm7")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -160.0
+offset_right = 128.0
+offset_bottom = 160.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Skirmish" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -42.0
+offset_top = 52.0
+offset_right = 34.0
+offset_bottom = 83.0
+grow_horizontal = 2
+text = "Skirmish"
+
+[node name="MapCreation" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -42.0
+offset_top = 116.0
+offset_right = 34.0
+offset_bottom = 147.0
+grow_horizontal = 2
+text = "Map Creation"
+
+[node name="Exit" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -42.0
+offset_top = 180.0
+offset_right = 34.0
+offset_bottom = 211.0
+grow_horizontal = 2
+text = "Exit"
+
+[connection signal="pressed" from="Panel/Skirmish" to="." method="_on_skirmish_pressed"]
+[connection signal="pressed" from="Panel/MapCreation" to="." method="_on_map_creation_pressed"]
+[connection signal="pressed" from="Panel/Exit" to="." method="_on_exit_pressed"]
