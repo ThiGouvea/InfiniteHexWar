@@ -259,6 +259,7 @@ offset_right = 110.0
 offset_bottom = 159.0
 grow_horizontal = 2
 max_value = 1000.0
+step = 10.0
 
 [node name="Sizex" type="SpinBox" parent="Panel"]
 layout_mode = 1
@@ -271,6 +272,7 @@ offset_right = 6.0
 offset_bottom = 159.0
 grow_horizontal = 2
 max_value = 1000.0
+step = 10.0
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
@@ -294,3 +296,5 @@ text = "WASD movimento Q e E zoom"
 [connection signal="value_changed" from="Panel/FrequencyScroll" to="." method="_on_frequency_scroll_value_changed"]
 [connection signal="pressed" from="Panel/Button" to="." method="_on_button_pressed"]
 [connection signal="value_changed" from="Panel/Seed2" to="." method="_on_seed_2_value_changed"]
+[connection signal="value_changed" from="Panel/Sizey" to="." method="_on_sizey_value_changed"]
+[connection signal="value_changed" from="Panel/Sizex" to="." method="_on_sizex_value_changed"]

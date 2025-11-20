@@ -90,5 +90,9 @@ func _on_hud_values_changed(value_name, value) -> void:
 	elif value_name == "frequency":
 		noise_height_texture.noise.frequency = value
 		noise = noise_height_texture.noise
+	elif value_name == "size_y":
+		width = value
+	elif value_name == "size_x":
+		height = value
 	elif value_name == "generate":
 		generate_world()
