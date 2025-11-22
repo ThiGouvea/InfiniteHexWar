@@ -8,7 +8,7 @@
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_vhibn"]
 noise_type = 0
 seed = 155
-frequency = 0.0012
+frequency = 0.001
 fractal_type = 2
 fractal_octaves = 4
 fractal_lacunarity = 3.0
